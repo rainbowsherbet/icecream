@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.icecream.mapper.HomeMapper">
+    <select id="selectHome" parameterType="String" resultType="com.icecream.model.Home">
+        SELECT *
+        FROM HOME
+        WHERE name = #{value}
+    </select>
+</mapper>
